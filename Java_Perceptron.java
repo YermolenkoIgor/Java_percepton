@@ -4,9 +4,9 @@ class Java_Perceptron {
 
     public static void main(String[] args) throws java.lang.Exception
     {
-    double epsilon = 1e-3;
+    double epsilon = 1e-3; // точность для градиентного спуска
     
-    //Neurotask nt1 = new Neurotask();
+    //Neurotask nt1 = new Neurotask();//задача поумолчанию (Xor)
     //Neurotask nt1 = new Neurotask("Tendention.txt");
     //Neurotask nt1 = new Neurotask("Segmentation.txt");
     Neurotask nt1 = new Neurotask("Outpoot.txt");
@@ -22,7 +22,7 @@ class Java_Perceptron {
     //p1.get_weights();
     //p1.get_bias();
     
-    p1.back_propagation(nt1, epsilon, 8000);
+    p1.back_propagation(nt1, epsilon, 8000);//ограничение на количество шагов
     //p1.neuro_exam(nt1);
     
     //p1.get_weights();
